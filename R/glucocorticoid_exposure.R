@@ -23,7 +23,7 @@ glucocorticoid_exposure <-function(dat){
     tmp = t(dat[cpgindx[-which(is.na(cpgindx))],]) %*%
       Polyepigenetic.GC.exposure.weights$Weights[-which(is.na(cpgindx))]
   }else{tmp = t(dat[cpgindx,]) %*% Polyepigenetic.GC.exposure.weights$Weights}
-  print(tmp)
+  #print(tmp)
 
    re=data.frame(id = colnames(dat),
               glucocorticoid_exposure_score=tmp
