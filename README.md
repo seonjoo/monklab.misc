@@ -5,7 +5,7 @@ Collection of miscellaneous functions for Monklab projects
 
 install.packages('remotes')
 
-remote::install_github('seonjoo/monklab.misc@master')
+remotes::install_github('seonjoo/monklab.misc@master')
 
 # Glucocorticoid exposure score calculation
 
